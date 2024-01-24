@@ -36,7 +36,7 @@ def main():
     experiment = ClassificationExperiment()
     experiment.setup(data=data, target=target_col)
     tuned_model = experiment.load_model('tuned_model')
-    #experiment.interpret_model(tuned_model)
+    experiment.interpret_model(tuned_model)
     experiment.plot_model(tuned_model, plot='feature')
 
 

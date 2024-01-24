@@ -99,6 +99,9 @@ def main():
     evaluate_metrics(predicted_target_train, target_col, output_path, name='train')
     evaluate_metrics(predicted_target_test, target_col, output_path, name='test')
 
+    experiment.interpret_model(tuned_model)
+    experiment.plot_model(tuned_model, plot='feature')
+
 
 if __name__ == '__main__':
     logging.basicConfig()
