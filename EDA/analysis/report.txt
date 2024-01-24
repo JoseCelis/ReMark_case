@@ -1,0 +1,96 @@
+Checking the variables types in raw_data
+product_id             object
+product_name           object
+category               object
+discounted_price       object
+actual_price           object
+discount_percentage    object
+rating                 object
+rating_count           object
+dtype: object
+
+Checking some statistics of the variables
+        product_id                                       product_name                                           category discounted_price actual_price discount_percentage rating rating_count
+count         1465                                               1463                                               1462             1462         1462                1462   1462         1460
+unique        1352                                               1336                                                211              549          449                  92     28         1140
+top     B07JW9H4J1  Fire-Boltt Ninja Call Pro Plus 1.83" Smart Wat...  Computers&Accessories|Accessories&Peripherals|...           ₹199       ₹999                 50%    4.1        9,378
+freq             3                                                  5                                                233               53          119                  56    243            9
+
+counting the number of null values per column                     N null values
+product_id                       0
+product_name                     2
+category                         3
+discounted_price                 3
+actual_price                     3
+discount_percentage              3
+rating                           3
+rating_count                     5
+
+Deciding what to do with the empty cells:
+initial length of data file 1465
+length of data file after dropping rows with null values 1460
+initial distributon of the target variable 
+4.1    243
+4.3    230
+4.2    227
+4.0    129
+3.9    123
+4.4    122
+3.8     86
+4.5     75
+4       52
+3.7     42
+3.6     35
+3.5     26
+4.6     17
+3.3     16
+3.4     10
+4.7      6
+3.1      4
+5.0      3
+3.0      3
+4.8      3
+3.2      2
+2.8      2
+2.3      1
+|        1
+2        1
+3        1
+2.6      1
+2.9      1
+Name: rating, dtype: int64
+distributon of the target variable after dropping rows wth null values 
+4.1    243
+4.3    230
+4.2    227
+4.0    129
+3.9    123
+4.4    122
+3.8     86
+4.5     75
+4       52
+3.7     42
+3.6     35
+3.5     26
+4.6     17
+3.3     16
+3.4     10
+4.7      6
+3.1      4
+4.8      3
+3.2      2
+2.8      2
+3.0      2
+5.0      2
+2.3      1
+|        1
+2        1
+3        1
+2.6      1
+2.9      1
+Name: rating, dtype: int64
+        product_id                                       product_name                                           category discounted_price actual_price discount_percentage rating rating_count
+count         1460                                               1460                                               1460             1460         1460                1460   1460         1460
+unique        1347                                               1333                                                211              549          449                  92     28         1140
+top     B07JW9H4J1  Fire-Boltt Ninja Call Pro Plus 1.83" Smart Wat...  Computers&Accessories|Accessories&Peripherals|...           ₹199       ₹999                 50%    4.1        9,378
+freq             3                                                  5                                                231               52          117                  56    243            9
